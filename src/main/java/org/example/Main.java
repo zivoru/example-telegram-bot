@@ -7,7 +7,7 @@ import com.pengrad.telegrambot.request.SendMessage;
 
 public class Main {
     public static void main(String[] args) {
-        var bot = new TelegramBot("5930936165:AAFE8j1HuhX3E48igBCo2typJ-HqP37tJ4Q);
+        var bot = new TelegramBot("5930936165:AAFE8j1HuhX3E48igBCo2typJ-HqP37tJ4Q");
         bot.setUpdatesListener(updates -> {
             for (Update update : updates) {
                 if (update.message().text().equals("/start")) {
